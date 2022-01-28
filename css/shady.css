@@ -338,8 +338,7 @@ section .container .landing-image img {
     height: 100%;
 }
 
-.gallery .cards .card::before {
-    content: "Press Here to reveal";
+.gallery .cards .card .psudo {
     position: absolute;
     top: 0;
     left: 0;
@@ -358,7 +357,7 @@ section .container .landing-image img {
 }
 
 
-.gallery .cards .card:hover::before {
+.gallery .cards .card .psudo:hover {
     opacity: 0;
 }
 
