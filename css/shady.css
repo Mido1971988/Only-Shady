@@ -344,6 +344,16 @@ section .container .landing-image img {
     position: relative;
     height: 300px;
 }
+
+.gallery .cards .card.last {
+    font-weight: bold;
+    color: white;
+    background-color:#303f56 ;
+    display: grid;
+    place-items: center;
+}
+
+
 .gallery .cards .card img,
 .gallery .cards .card video{
     width: 100%;
