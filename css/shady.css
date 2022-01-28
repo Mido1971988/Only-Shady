@@ -495,15 +495,9 @@ section .container .landing-image img {
 
 .flip {
    display: grid;
-   grid-template-columns: repeat(auto-fill , minmax(500px, 1fr));
+   grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
    gap: 50px;
    place-items: center;
-}
-
-@media (max-width:767px) {
-    .flip {
-        justify-items: flex-start;
-    }
 }
 
 
@@ -512,14 +506,8 @@ section .container .landing-image img {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s; 
-    width: 50%;
-    aspect-ratio: 1/1;
-}
-
-@media (max-width:767px) {
-    .backfacebox {
-        width: 70%;
-    }
+    width: 300px;
+    height:300px;
 }
 
 
