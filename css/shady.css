@@ -309,4 +309,71 @@ section .container .landing-image img {
   }
 
 
+/* End Ghosts */
+/* Start Gallery */
+
+.gallery {
+    /* padding-top: var(--padding);
+    padding-bottom: var(--padding); */
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.gallery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.gallery video {
+    width: 100%;
+}
+
+.gallery .image {
+    position: absolute;
+    border-radius: 30%;
+    width: 250px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+
+@media (max-width:991px){
+    .gallery .image {
+        width: 150px;
+    }
+}
+
+@media (max-width:767px){
+    .gallery .image {
+        width: 70px;
+    }
+}
+
+.gallery .image img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.gallery .image.one {
+    left: 10px;
+    top: 10px;
+}
+.gallery .image.two {
+    right: 10px;
+    top: 10px;
+}
+.gallery .image.three {
+    right: 10px;
+    bottom: 10px;
+}
+.gallery .image.four {
+    left: 10px;
+    bottom: 10px;
+}
 
