@@ -352,14 +352,13 @@ section .container .landing-image img {
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: visible;
+    opacity: 1;
     transition: 1s linear;
-    z-index: 1;
 }
 
 
-.gallery .cards .card .psudo:hover {
-    visibility: hidden;
+.gallery .cards .card:hover .psudo{
+    opacity: 0;
 }
 
 
