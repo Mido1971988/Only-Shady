@@ -360,7 +360,7 @@ section .container .landing-image img {
     height: 100%;
 }
 
-.gallery .cards .card::before {
+/* .gallery .cards .card::before {
     content: "Press Here To Reveal";
     position: absolute;
     top: 0;
@@ -377,7 +377,7 @@ section .container .landing-image img {
     align-items: center;
     opacity: 1;
     transition: 1s linear;
-}
+} */
 
 
 .gallery .cards .card:hover::before{
