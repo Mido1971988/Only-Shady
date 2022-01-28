@@ -286,6 +286,18 @@ section .container .landing-image img {
     margin-bottom: 10px;
     display: block;
   }
+
+  .ghosts .box .rate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .ghosts .box .rate span {
+      font-weight: bold;
+      font-size: 13px;
+  }
+
 .ghosts .box .rate .filled {
     color: #ffc107;
   }
@@ -295,5 +307,6 @@ section .container .landing-image img {
     margin-top: 10px;
     margin-bottom: 0;
   }
+
 
 
