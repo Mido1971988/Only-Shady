@@ -33,6 +33,11 @@ ul {
     margin-right: auto;
 }
 
+a {
+    text-decoration: none;
+    color: initial;
+}
+
 /* small */
 @media (min-width:768px) {
     .container {
@@ -59,10 +64,10 @@ ul {
 /* Start Nav */
 nav {
     background-color: #f6f6f6;
+    height: 60px;
 }
 
 nav .container{
-    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,8 +85,19 @@ nav .container ul {
     align-items: center;
 }
 
-nav .container ul li {
-    margin-right: 20px;
+ 
+
+nav .container ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+@media (max-width:767px) {
+    nav .container ul  {
+        font-size: 12px;
+    }
+    nav .container ul li:not(:last-child) {
+        margin-right: 15px;
+    }
 }
 
 /* End Nav */
@@ -111,6 +127,7 @@ section .container {
     align-items: center;
     height: 100%;
     gap: 50px;
+    overflow: hidden;
 }
 
 
@@ -147,7 +164,6 @@ section .container .welcome .image {
     top: 100%;
     transform: rotate(20deg);
     animation: flying 20s linear infinite;
-    z-index: 1;
 }
 
 section .container .welcome .image img {
@@ -224,9 +240,6 @@ section .container .landing-image {
     }
 }
 
-section .container .landing-image {
-    z-index: 1;
-}
 
 section .container .landing-image img {
     max-width: 100%;
