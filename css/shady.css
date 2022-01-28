@@ -479,12 +479,11 @@ section .container .landing-image img {
     border-radius: 6px;
     font-weight: bold;
     transition: 0.5s;
-  }
-  .only .box a:hover {
     background-color: #303f56;
     border-color:#303f56;
     color: white;
   }
+ 
 
 /* End Only-Fans */
 /* Start  Q&A */
@@ -505,8 +504,6 @@ section .container .landing-image img {
 }
 
 .flip {
-   /* display: grid;
-   grid-template-columns: repeat(auto-fill , minmax(300px, 1fr)); */
    display: flex;
    flex-wrap: wrap;
    gap: 20px;
