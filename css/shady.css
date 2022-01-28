@@ -513,7 +513,12 @@ section .container .landing-image img {
 
 
 .backfacebox:hover{
-    transform:rotateY(-180deg)
+    transform:rotateY(-180deg);
+    -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .backfacebox .face {
@@ -537,10 +542,13 @@ section .container .landing-image img {
 .backfacebox .front {
     background-color: #303f56;
     backface-visibility: hidden;
-     
-    
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(1px);
+    -webkit-transform: translateZ(1px);
 }
 .backfacebox .back {
-    transform: rotateY(180deg);  
+    transform: rotateY(180deg) translateZ(1px);
+    -webkit-transform: rotateY(180deg) translateZ(1px);  
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
