@@ -262,14 +262,14 @@ section .container .landing-image img {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
   }
-.ghosts  .box {
+.ghosts .box {
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
     border-radius: 6px;
     position: relative;
   }
-.ghosts  .box img {
+.ghosts .box img {
     position: absolute;
     right: -10px;
     top: -50px;
@@ -278,18 +278,18 @@ section .container .landing-image img {
     border-radius: 50%;
     border: 10px solid var(--background-color);
   }
-.ghosts  .box h3 {
+.ghosts .box h3 {
     margin: 0 0 10px;
   }
-.ghosts  .box .title {
+.ghosts .box .title {
     color: #777;
     margin-bottom: 10px;
     display: block;
   }
-.ghosts  .box .rate .filled {
+.ghosts .box .rate .filled {
     color: #ffc107;
   }
-.ghosts  .box p {
+.ghosts .box p {
     line-height: 1.5;
     color: #777;
     margin-top: 10px;
