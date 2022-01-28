@@ -1,7 +1,8 @@
 /* Start Variables */
-/* :root {
-
-} */
+:root {
+    --padding:100px;
+    --background-color:#f6f6f6;
+}
 
 /* End Variables */
 /* Start Global Rules */
@@ -63,7 +64,7 @@ a {
 
 /* Start Nav */
 nav {
-    background-color: #f6f6f6;
+    background-color: var(--background-color);
     height: 60px;
 }
 
@@ -94,6 +95,7 @@ nav .container ul li:not(:last-child) {
 @media (max-width:767px) {
     nav .container ul  {
         font-size: 12px;
+        font-weight: bold;
     }
     nav .container ul li:not(:last-child) {
         margin-right: 15px;
@@ -245,5 +247,53 @@ section .container .landing-image img {
     max-width: 100%;
     width: 300px;
 }
+
+/* End Section */
+/* Start Ghosts */
+
+.ghosts {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    background-color: var(--background-color);
+}
+
+.ghosts .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+  }
+.ghosts  .box {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+    border-radius: 6px;
+    position: relative;
+  }
+.ghosts  .box img {
+    position: absolute;
+    right: -10px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid var(--background-color);
+  }
+.ghosts  .box h3 {
+    margin: 0 0 10px;
+  }
+.ghosts  .box .title {
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+  }
+.ghosts  .box .rate .filled {
+    color: #ffc107;
+  }
+.ghosts  .box p {
+    line-height: 1.5;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
 
 
