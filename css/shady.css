@@ -59,6 +59,17 @@ a {
 /* End Global Rules */
 /* Start Component */
 
+.main-title {
+    text-transform: uppercase;
+    margin: 0 auto 80px;
+    border: 2px solid #303f56;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    color: #303f56;
+    border-radius: 10px;
+}
+
 /* End Component */
 /* Start Header */
 
@@ -352,13 +363,13 @@ section .container .landing-image img {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(0);
+    opacity: 1;
     transition: 1s linear;
 }
 
 
 .gallery .cards .card:hover .psudo{
-    transform: translateY(-100%);
+    opacity: 0;
 }
 
 
