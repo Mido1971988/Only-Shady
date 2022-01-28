@@ -64,7 +64,6 @@ a {
 
 /* Start Nav */
 nav {
-    background-color: var(--background-color);
     height: 60px;
 }
 
@@ -119,7 +118,7 @@ section::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(92 92 92 / 95%);;
+    background-color: rgb(48 63 86 / 95%);
   }
 
 section .container {
@@ -313,13 +312,13 @@ section .container .landing-image img {
 /* Start Gallery */
 
 .gallery {
-    /* padding-top: var(--padding);
-    padding-bottom: var(--padding); */
-    background-color: var(--background-color);
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    background-color: white;
     position: relative;
 }
 
-.gallery::before {
+/* .gallery::before {
     content: "";
     position: absolute;
     top: 0;
@@ -328,52 +327,61 @@ section .container .landing-image img {
     height: 100%;
     background-color: black;
     opacity: 0.4;
-}
+} */
 
 .gallery video {
     width: 100%;
 }
 
-.gallery .image {
-    position: absolute;
-    border-radius: 30%;
-    width: 250px;
-    aspect-ratio: 1/1;
+.gallery .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.gallery .cards .card {
+    border-radius: 10px;
     overflow: hidden;
+    position: relative;
+}
+.gallery .cards .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .cards .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #303f56;
+    opacity: 1;
+    transition: 2s linear;
+}
+
+.gallery .cards .card::after {
+    content: "Press Here to reveal";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    color: white;
+    left: 0;
+    transition: 0.5s linear;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+}
+
+.gallery .cards .card:hover::before,
+.gallery .cards .card:hover::after {
+    opacity: 0;
 }
 
 
-@media (max-width:991px){
-    .gallery .image {
-        width: 150px;
-    }
-}
 
-@media (max-width:767px){
-    .gallery .image {
-        width: 70px;
-    }
-}
-
-.gallery .image img {
-    max-width: 100%;
-    aspect-ratio: 1/1;
-}
-
-.gallery .image.one {
-    left: 10px;
-    top: 10px;
-}
-.gallery .image.two {
-    right: 10px;
-    top: 10px;
-}
-.gallery .image.three {
-    right: 10px;
-    bottom: 10px;
-}
-.gallery .image.four {
-    left: 10px;
-    bottom: 10px;
-}
 
