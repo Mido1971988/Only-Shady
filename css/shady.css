@@ -360,7 +360,8 @@ section .container .landing-image img {
     height: 100%;
 }
 
-.gallery .cards .card .psudo {
+.gallery .cards .card::before {
+    content: "Press Here To Reveal";
     position: absolute;
     top: 0;
     left: 0;
@@ -379,7 +380,7 @@ section .container .landing-image img {
 }
 
 
-.gallery .cards .card:hover .psudo{
+.gallery .cards .card:hover::before{
     opacity: 0;
 }
 
