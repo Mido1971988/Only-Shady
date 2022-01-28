@@ -475,3 +475,84 @@ section .container .landing-image img {
     color: white;
   }
 
+/* End Only-Fans */
+/* Start  Q&A */
+
+.question {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    text-align: center;
+}
+
+.question h1:first-child {
+    color:#303f56;
+    margin-bottom: 50px;
+}
+.question h1:last-of-type {
+    color:#303f56;
+    margin-bottom: 100px;
+}
+
+.flip {
+   display: grid;
+   grid-template-columns: repeat(auto-fill , minmax(500px, 1fr));
+   gap: 50px;
+   place-items: center;
+}
+
+@media (max-width:767px) {
+    .flip {
+        justify-items: flex-start;
+    }
+}
+
+
+
+.backfacebox {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s; 
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width:767px) {
+    .backfacebox {
+        width: 70%;
+    }
+}
+
+
+
+.backfacebox:hover{
+    transform:rotateY(-180deg)
+}
+
+.backfacebox .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;    
+}
+
+.backfacebox .face img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.backfacebox .front {
+    background-color: #303f56;
+    backface-visibility: hidden;
+     
+    
+}
+.backfacebox .back {
+    transform: rotateY(180deg);  
+    backface-visibility: hidden;
+}
