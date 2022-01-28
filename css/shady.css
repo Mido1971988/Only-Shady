@@ -318,20 +318,7 @@ section .container .landing-image img {
     position: relative;
 }
 
-/* .gallery::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.4;
-} */
 
-.gallery video {
-    width: 100%;
-}
 
 .gallery .cards {
     display: grid;
@@ -345,40 +332,33 @@ section .container .landing-image img {
     overflow: hidden;
     position: relative;
 }
-.gallery .cards .card img{
+.gallery .cards .card img,
+.gallery video{
     width: 100%;
     height: 100%;
 }
 
 .gallery .cards .card::before {
-    content: "";
+    content: "Press Here to reveal";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #303f56;
-    opacity: 1;
-    transition: 2s linear;
-}
-
-.gallery .cards .card::after {
-    content: "Press Here to reveal";
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-    color: white;
-    left: 0;
-    transition: 0.5s linear;
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
-    text-align: center;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 1s linear;
 }
 
-.gallery .cards .card:hover::before,
-.gallery .cards .card:hover::after {
+
+.gallery .cards .card:hover::before {
     opacity: 0;
 }
 
