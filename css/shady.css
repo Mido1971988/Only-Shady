@@ -483,6 +483,7 @@ section .container .landing-image img {
     background-color: #303f56;
     border-color:#303f56;
     color: white;
+    cursor: pointer;
   }
  
 
