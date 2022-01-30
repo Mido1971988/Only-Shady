@@ -339,8 +339,6 @@ section .container .landing-image img {
 }
 
 .gallery .cards .card {
-    /* border-radius: 10px;
-    overflow: hidden; */
     position: relative;
     height: 300px;
 }
