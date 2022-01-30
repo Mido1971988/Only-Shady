@@ -682,8 +682,8 @@ section .container .landing-image img {
     position: relative;  
     text-align: center;
     color: white;
-    /* padding-top:50px ;
-    padding-bottom: 50px; */
+    padding-top:50px ;
+    padding-bottom: 50px;
 }
 
 .footer::before {
