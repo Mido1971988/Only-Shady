@@ -351,6 +351,7 @@ section .container .landing-image img {
     background-color:#303f56 ;
     display: grid;
     place-items: center;
+    border-radius: 10px;
 }
 
 
