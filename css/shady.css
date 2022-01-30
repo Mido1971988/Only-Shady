@@ -354,11 +354,18 @@ section .container .landing-image img {
 }
 
 
-.gallery .cards .card img,
-.gallery .cards .card video{
+.gallery .cards .card img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.gallery .cards .card video{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 .gallery .cards .card::before {
