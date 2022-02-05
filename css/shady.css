@@ -386,6 +386,33 @@ section .container .landing-image img {
 
 
 /* End Gallery */
+/* Start Weekly Video */
+.youtube {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  background-color: white;
+  
+}
+
+.youtube-box {
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 10px
+}
+
+.youtube-box iframe {
+  width:600px;
+  height:400px;
+  border-radius: 10px;
+}
+
+@media (max-width:767px) {
+  .youtube-box iframe {
+    width:360px;
+    height: 300px;
+  }
+} 
+/* End Weekly Video */
 /* Start Only-Fans */
 
 .only {
