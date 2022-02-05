@@ -397,7 +397,26 @@ section .container .landing-image img {
 .youtube-box {
   width: fit-content;
   margin: 0 auto;
-  border-radius: 10px
+  border-radius: 10px;
+  position: relative;
+}
+
+.youtube-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imgs/youtube.png);
+  background-size: cover;
+  z-index: 1;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.youtube-box:hover:before {
+  z-index: -1;
 }
 
 .youtube-box iframe {
