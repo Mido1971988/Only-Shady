@@ -1,4 +1,4 @@
-let cards = document.querySelectorAll(".ghosts .box");
+let cards = document.querySelector(".ghosts .box.shady");
 let stars = document.querySelectorAll(".far.fa-star");
 let shadyStars = document.querySelectorAll(".filled.fas.fa-star.shady")
 let shadyStarsEmpty = document.querySelectorAll(".far.fa-star.shady")
@@ -19,8 +19,6 @@ function choxStarsEmpty() {
     }
 }
 
-for ( let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener("click", allStars);
-    cards[i].addEventListener("click", choxStars);
-    cards[i].addEventListener("click", choxStarsEmpty);
-}
+cards.addEventListener("click", allStars);
+cards.addEventListener("click", choxStars);
+cards.addEventListener("click", choxStarsEmpty);
