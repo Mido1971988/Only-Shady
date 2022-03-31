@@ -66,7 +66,7 @@ if(window.localStorage.getItem("StarStatus") && lsArr.length > 0) {
 
 passBtn.addEventListener("click", function() {
     let promptMsg = prompt("Enter Your Password")
-    if(promptMsg === "Shadymalt"){
+    if(promptMsg === "Admin"){
         for(let star of allStars){
             let plus = document.createElement("span")
             let negative = document.createElement("span")
