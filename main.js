@@ -39,7 +39,6 @@ for(let star of mystars){
 if(window.localStorage.getItem("StarStatus")){
     lsArr = JSON.parse(window.localStorage.getItem("StarStatus"))
 }else{
-    console.log("Empty")
     lsArr = []
 }
 
@@ -55,7 +54,6 @@ if(window.localStorage.getItem("StarStatus") && lsArr.length > 0) {
         }
     }
 } else {
-    console.log("Empty2")
     for( let star of mystars){
         let status = star.classList.contains("fas") ? true : false
         let starID = star.id
@@ -68,7 +66,7 @@ if(window.localStorage.getItem("StarStatus") && lsArr.length > 0) {
 
 passBtn.addEventListener("click", function() {
     let promptMsg = prompt("Enter Your Password")
-    if(promptMsg === "shadymalt"){
+    if(promptMsg === "Shadymalt"){
         for(let star of allStars){
             let plus = document.createElement("span")
             let negative = document.createElement("span")
