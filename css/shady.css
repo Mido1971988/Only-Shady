@@ -272,6 +272,19 @@ section .container .landing-image img {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
   }
+
+.ghosts .password {
+  max-width : 200px;
+  color: white;
+  background-color: #303f56;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 18px;
+  position: relative;
+  top: -60px;
+}
 .ghosts .box {
     padding: 20px;
     background-color: white;
